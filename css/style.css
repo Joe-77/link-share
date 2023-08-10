@@ -1,0 +1,528 @@
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+header img {
+  width: 20px;
+}
+button {
+  cursor: pointer;
+  transition: 0.7s;
+}
+li {
+  list-style: none;
+}
+input:focus {
+  outline: none;
+}
+img {
+  width: 100%;
+}
+.d-block {
+  display: block !important;
+}
+.remove {
+  user-select: none;
+}
+input {
+  border-radius: 8px;
+}
+
+.photo h5 {
+  word-wrap: break-word;
+  font-size: 12px;
+  margin-top: 7px;
+}
+.button-active {
+  background-color: #7268a7;
+  color: white;
+}
+.center-mobile {
+  margin: auto;
+}
+#my-name {
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+.main-div:last-child {
+  margin-bottom: 60px;
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+header .logo {
+  display: flex;
+  align-content: center;
+  gap: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+header .logo span {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+header .link {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+}
+header .link div {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+header .link i {
+  margin-right: 5px;
+}
+header .link .active {
+  background-color: #f6f5fd;
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: blueviolet;
+}
+header button {
+  padding: 10px;
+  border-color: #7268a7;
+  color: #745dd1;
+  background-color: transparent;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+header button:hover,
+.create-link button:hover {
+  background-color: #7268a7;
+  color: white;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 991px) {
+  header {
+    padding: 30px;
+  }
+}
+/* End Header */
+
+/* Start Section */
+section {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.mobile {
+  position: relative;
+}
+.mobile .all {
+  position: absolute;
+  top: 70px;
+  left: 165px;
+}
+.mobile .all .photo {
+  /* position: relative;
+  left: 40px; */
+  text-align: center;
+  width: 175px;
+  user-select: none;
+}
+.mobile .all .img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid blue;
+  user-select: none;
+}
+.mobile .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 12px;
+  padding: 5px 20px;
+  text-transform: capitalize;
+}
+.mobile .social span {
+  margin-left: 5px;
+}
+.fa-arrow-right:hover {
+  animation: arrow 0.4s infinite linear alternate;
+  cursor: pointer;
+}
+@keyframes arrow {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+.github {
+  background-color: black;
+}
+.youtube {
+  background-color: red;
+}
+.linkedin {
+  background-color: blue;
+}
+.create-link h1 {
+  font-style: italic;
+  font-family: monospace;
+}
+.create-link p {
+  font-size: 10px;
+  color: gray;
+  margin: 5px 0;
+}
+.create-link button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border-color: #7268a7;
+  border-radius: 7px;
+  color: blue;
+}
+.main-div {
+  margin-top: 30px;
+  background-color: #ccc;
+  padding: 10px;
+}
+.main-div .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-div .head .name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.main-div .remove {
+  cursor: pointer;
+  color: gray;
+}
+.text-form h4 {
+  margin: 10px 0 0;
+}
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+li.option {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 14px;
+  background-color: white;
+  margin-top: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+.option p {
+  font-size: 14px;
+}
+p#Link-name {
+  margin-top: 10px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border-color: blue;
+  color: black;
+}
+input:focus::placeholder {
+  transition: 1s;
+  opacity: 0;
+}
+.d-none {
+  display: none;
+}
+ul,
+ul li {
+  user-select: none;
+}
+p#selectText {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.selected p {
+  font-size: 14px !important;
+}
+select {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background: antiquewhite;
+}
+small {
+  font-size: 12px;
+  margin-top: 10px;
+  display: block;
+  color: #bd1e1e;
+}
+.details {
+  width: 500px;
+}
+#bg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+#bg p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: black;
+}
+.details h1 {
+  text-transform: capitalize;
+  font-family: monospace;
+  font-style: italic;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.details .des {
+  color: gray;
+  font-size: 10px;
+}
+form {
+  margin-top: 50px;
+  padding: 20px;
+}
+form input[type="text"] {
+  width: 50%;
+}
+form i {
+  display: block;
+  font-size: 30px;
+  color: black;
+}
+label[for="change"] {
+  cursor: pointer;
+  text-align: center;
+}
+form .my-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  background-color: #ddd;
+  padding: 10px;
+  position: relative;
+}
+form .my-div:first-child {
+  margin-bottom: 20px;
+}
+form .my-div p {
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.my-div label {
+  font-size: 12px;
+  color: gray;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+}
+.btn {
+  margin-top: 80px;
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+form button {
+  padding: 5px;
+  width: 60px;
+  border-radius: 9px;
+  border: navajowhite;
+  background-color: blue;
+  color: white;
+}
+form button:hover {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}
+@media (max-width: 767px) {
+  section {
+    flex-direction: column;
+  }
+  .create-link {
+    width: 80%;
+    margin: auto;
+  }
+  .mobile {
+    max-width: 500px;
+    margin: auto;
+  }
+  .details {
+    margin: auto;
+    text-align: center;
+  }
+}
+/* End Section */
+
+/* Start Footer */
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  letter-spacing: 1.5px;
+}
+footer a {
+  font-family: monospace;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-left: 5px;
+  animation: cColor 5s infinite alternate linear;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@keyframes cColor {
+  0% {
+    color: blueviolet;
+  }
+  25% {
+    color: plum;
+  }
+  50% {
+    color: aqua;
+  }
+  75% {
+    color: violet;
+  }
+  100% {
+    color: salmon;
+  }
+}
+/* End Footer */
+
+@media (min-width: 361px) and (max-width: 500px) {
+  .details {
+    width: 360px;
+  }
+  .mobile {
+    width: 360px;
+  }
+  .mobile .all {
+    top: 40px;
+    left: 30%;
+  }
+  .mobile .social {
+    width: 140px;
+    padding: 5px;
+    position: relative;
+    left: 2px;
+  }
+  .mobile .all .img img {
+    width: 50px;
+    height: 50px;
+  }
+  .img {
+    position: relative;
+    left: -15px;
+  }
+  #my-name {
+    position: relative;
+    left: -12px;
+    font-size: 12px;
+  }
+  .photo h5 {
+    position: relative;
+    left: 15px;
+    width: 120px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobile .social {
+    max-width: 100px;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .img {
+    position: relative;
+    left: -38px;
+  }
+  .mobile .all .img img {
+    width: 50px;
+    height: 50px;
+  }
+  .mobile {
+    width: 320px !important;
+  }
+  .mobile .all {
+    top: 40px;
+    left: 35%;
+  }
+  #my-name {
+    position: relative;
+    left: -35px;
+  }
+  #my-mail {
+    width: 120px;
+    margin-left: -10px;
+    line-height: 1.5;
+  }
+  .details {
+    width: 320px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 900px) {
+  .mobile .all {
+    left: 33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    margin-bottom: 90px;
+  }
+}
