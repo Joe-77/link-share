@@ -134,23 +134,6 @@ addLink.addEventListener("click", () => {
   mainDiv.appendChild(head);
   mainDiv.appendChild(div);
 
-  remove.addEventListener("click", () => {
-    mainDiv.remove();
-
-    if (remove.click) {
-      if (value1.selected) {
-        youtube1.href = "#";
-        youtube1.setAttribute("target", "_self");
-      } else if (value2.selected) {
-        github1.href = "#";
-        github1.setAttribute("target", "_self");
-      } else {
-        linedIn1.href = "#";
-        linedIn1.setAttribute("target", "_self");
-      }
-    }
-  });
-
   i++;
 
   inputLink.addEventListener("keyup", () => {
@@ -180,6 +163,23 @@ addLink.addEventListener("click", () => {
         validMail.className = "d-block";
       }
     }
+
+    remove.addEventListener("click", () => {
+      mainDiv.remove();
+
+      if (remove.click) {
+        if (value1.selected) {
+          youtube1.href = "#";
+          youtube1.setAttribute("target", "_self");
+        } else if (value2.selected) {
+          github1.href = "#";
+          github1.setAttribute("target", "_self");
+        } else {
+          linedIn1.href = "#";
+          linedIn1.setAttribute("target", "_self");
+        }
+      }
+    });
   });
 });
 
