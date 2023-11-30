@@ -172,6 +172,21 @@ section {
   animation: arrow 0.4s infinite linear alternate;
   cursor: pointer;
 }
+#all-links {
+  height: 360px;
+  overflow-y: auto;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;  
+}
+#all-links::-webkit-scrollbar {
+  width: 5px;
+}
+#all-links::-webkit-scrollbar-thumb {
+  background: #888;
+}
+#all-links::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
 @keyframes arrow {
   from {
     transform: translate(0px);
